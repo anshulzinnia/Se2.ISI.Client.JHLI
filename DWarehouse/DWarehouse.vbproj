@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F68449B-6814-47A3-944C-900527100458}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>Se2.ISI.Client.JHLI.DWarehouse</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Se2.ISI.Client.JHLI.DWarehouse.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Se2.ISI.Client.JHLI.DWarehouse.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Se2.ISI.Base.Data">
+      <HintPath>..\..\..\References\Debug\Se2.ISI.Base.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Exception">
+      <HintPath>..\..\..\References\Debug\Se2.ISI.Base.Exception.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Lookup">
+      <HintPath>..\..\..\References\Debug\Se2.ISI.Base.Lookup.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Messaging">
+      <HintPath>..\..\..\References\Debug\Se2.ISI.Base.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Objects">
+      <HintPath>..\..\..\References\Debug\Se2.ISI.Base.Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Presentation">
+      <HintPath>..\..\..\References\Debug\Se2.ISI.Base.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Processing">
+      <HintPath>..\..\..\References\Debug\Se2.ISI.Base.Processing.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Settings">
+      <HintPath>..\..\..\References\Debug\Se2.ISI.Base.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Utility">
+      <HintPath>..\..\..\References\Debug\Se2.ISI.Base.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Xlat">
+      <HintPath>..\..\..\References\Debug\Se2.ISI.Base.Xlat.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLMs\Address.vb" />
+    <Compile Include="CLMs\Claims.vb" />
+    <Compile Include="CLMs\ClaimsBeneficiary.vb" />
+    <Compile Include="CLMs\DISB.vb" />
+    <Compile Include="CLMs\DPvalues.vb" />
+    <Compile Include="CLMs\Header.vb" />
+    <Compile Include="CLMs\Names.vb" />
+    <Compile Include="CLMs\Phone.vb" />
+    <Compile Include="CLMs\Policy.vb" />
+    <Compile Include="CLMs\Rider.vb" />
+    <Compile Include="CLMs\Roles.vb" />
+    <Compile Include="CLMs\Trailer.vb" />
+    <Compile Include="CLMs\Trans.vb" />
+    <Compile Include="Controller.vb" />
+    <Compile Include="DataSources\Address.vb" />
+    <Compile Include="DataSources\Claims.vb" />
+    <Compile Include="DataSources\ClaimsBeneficiary.vb" />
+    <Compile Include="DataSources\Common.vb" />
+    <Compile Include="DataSources\DISB.vb" />
+    <Compile Include="DataSources\DPvalues.vb" />
+    <Compile Include="DataSources\MValues.vb" />
+    <Compile Include="DataSources\Names.vb" />
+    <Compile Include="DataSources\Phone.vb" />
+    <Compile Include="DataSources\Policy.vb" />
+    <Compile Include="DataSources\Rider.vb" />
+    <Compile Include="DataSources\Roles.vb" />
+    <Compile Include="DataSources\Trans.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Processors\Address.vb" />
+    <Compile Include="Processors\Claims.vb" />
+    <Compile Include="Processors\ClaimsBeneficiary.vb" />
+    <Compile Include="Processors\DISB.vb" />
+    <Compile Include="Processors\DPvalues.vb" />
+    <Compile Include="Processors\MValues.vb" />
+    <Compile Include="Processors\Names.vb" />
+    <Compile Include="Processors\Phone.vb" />
+    <Compile Include="Processors\Policy.vb" />
+    <Compile Include="Processors\Rider.vb" />
+    <Compile Include="Processors\Roles.vb" />
+    <Compile Include="Processors\Trans.vb" />
+    <Compile Include="Records\Address.vb" />
+    <Compile Include="Records\Claims.vb" />
+    <Compile Include="Records\ClaimsBeneficiary.vb" />
+    <Compile Include="Records\Common.vb" />
+    <Compile Include="Records\DISB.vb" />
+    <Compile Include="Records\DPvalues.vb" />
+    <Compile Include="Records\MValues.vb" />
+    <Compile Include="Records\Names.vb" />
+    <Compile Include="Records\Phone.vb" />
+    <Compile Include="Records\Policy.vb" />
+    <Compile Include="Records\Riders.vb" />
+    <Compile Include="Records\Roles.vb" />
+    <Compile Include="Records\Trans.vb" />
+    <Compile Include="SourceLayouts\Address.vb" />
+    <Compile Include="SourceLayouts\Claims.vb" />
+    <Compile Include="SourceLayouts\ClainsBeneficiary.vb" />
+    <Compile Include="SourceLayouts\DISB.vb" />
+    <Compile Include="SourceLayouts\DPvalues.vb" />
+    <Compile Include="SourceLayouts\MValues.vb" />
+    <Compile Include="SourceLayouts\Names.vb" />
+    <Compile Include="SourceLayouts\Phone.vb" />
+    <Compile Include="SourceLayouts\Policy.vb" />
+    <Compile Include="SourceLayouts\Rider.vb" />
+    <Compile Include="SourceLayouts\Roles.vb" />
+    <Compile Include="SourceLayouts\Trans.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
